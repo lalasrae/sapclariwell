@@ -34,7 +34,7 @@ EMAIL_HOST_PASSWORD = "Clariwell@04"
 EMAIL_USE_TLS = True
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
