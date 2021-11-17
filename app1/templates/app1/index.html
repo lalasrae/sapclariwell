@@ -1,0 +1,159 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clariwell Website Design</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> 
+<link rel="stylesheet" href="{% static 'app1/css/all.css' %}">
+</head>
+<body>
+    <section class="header">
+        <nav><a href="contact"><img src="{% static 'app1/images/logo1.jpeg' %}" ></a>
+            <div class="nav-link" id="navLink">
+            <i class="fa fa-window-close-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="courses">IT CONSULTATION</a></li>
+                    <li><a href="blog">TRAININGS</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Welcome To Clariwell Techsys</h1>
+            <p>Clariwell Techsys is an IT consultation firm and SAP Training institute offering online training & SAP class room training for different SAP modules by industry best experts 
+                Offer holistic solutions and top-class service for enterprises.
+                Along with SAP we provide trainings to IT & Mechanical Software. 
+                Specialize in offering the expertise of our highly-qualified consultant, our pool of Local SAP- Certified professionals.
+                We offer one of the best SAP Trainings services in Pune, Mumbai, Nasik, Aurangabad, & Akola. Our domain knowledge, along with in-depth SAP consulting experience is considerable.
+                 </p>
+        </div>
+
+    </section>
+    <!-- --------course--------->
+    <section class="course">
+        <h1>Services we Offer</h1>
+        <div class="row">
+            <div class="course-col">
+                <h3> IT Consultation </h3>
+                <p>Support, Implementation, Roll-out projects, freelancing, server access</p>
+            </div>
+            <div class="course-col">
+                <h3>Training</h3>
+                <p>SAP (Technical & Functional Modules), Python, Advance Java, Sales Force, Manual & Auto Testing and Network Security</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- ------campus------>
+ 
+
+<section class="testimonials">
+    <h1>What About Student Says</h1>
+    <div class="row">
+        <div class="testimonials-col">
+            <div>
+                <p>The class was like drinking from a fire hose. We covered ABAP in Two months, two hour sessions and our trainer kept us busy (you'll definitely get your money's worth).  He is an excellent instructor and provided a lot of SAP training, augmented with him on-the-job experiences, during the course of the classes. 
+                    I would highly recommend “Clariwell Techsys</p>
+                <h3>Mohd Siddiqui</h3>
+                <h5>SAP ABAP</h5>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+               
+
+            </div>
+        </div>
+        <div class="testimonials-col">
+            <div>
+                <p>I have taken SAP MM training from CTS. This the first time I have attended a online class and wondered how effective it would be. It was very effective and therefore I would definitely be interested in attending other classes in the same format in  CTS. My Trainer Mr. Jayant Sir was very knowledgeable and provided a wealth of information about the course.Recording facility is excellent for revising. The course helped to build confidence, Valuable experiences and learning</p>
+                <h3>Mr. Shubham</h3>
+                <h5>SAP MM</h5>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="testimonials-col">
+            <div>
+                <p>The best SAP MM training is given by Mr. Manoj sir. Point to be noted here is ,in the training , concept clarity with business scenarios and complex concepts in SAP MM was explained very well along with ingratiated knowledge of othe related modules. Excellent training.
+                    Highly recommended.</p>
+                <h3>Mr. Vivek</h3>
+                <h5>SAP MM</h5>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+               
+
+            </div>
+        </div>
+                <div class="testimonials-col">
+                    <div>
+                        <p>The best SAP MM training given by Mr. Manoj sir. In this training, all concept and scenarios was explained very well.
+                            The sessions was going very interactively. I learned a lot. 
+                            Thank you Manoj sir and Clariwell Techsys.</p>
+                        <h3>Mr. Rahul kumar</h3>
+                        <h5>SAP MM</h5>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+        
+                </div>
+        </div>
+        
+
+</section>
+
+<!-- --------Call To Action--------->
+<section class="cta">
+    <h1>Enroll For Our Various Online Courses <br> Anywhere  from The world</h1>
+    <a href="contact" class="hero-btn">CONTACT US</a>
+</section>
+
+
+<!-- ----------Footer------- -->
+
+<section class="footer">
+    <h4>Follow Us</h4>
+    <div class="icons">
+        <i class="fa fa-envelope"></i>
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p>Made With <i class="fas fa-heart"></i> by Easy Tutorials</p>
+</section>
+
+
+
+<!-- ------JavaScript for Toggle Menu------ -->
+<script>
+    navLink = document.getElementById("navLink");
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>

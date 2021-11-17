@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clariwell Website Design</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="{% static 'app1/css/all.css' %}">
+</head>
+<body>
+    <section class="sub-header">
+        <nav><a href="index.html"><img src="{% static 'app1/images/logo1.jpeg' %}" ></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-window-close-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="courses">IT CONSULTATION</a></li>
+                    <li><a href="blog">TRAININGS</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>IT Consultation</h1>
+    </section>
+<!-- --------------course-------- -->
+<section class="course">
+    <h3>As a part of IT Consultation, We majorly deals in SAP vertical</h3>
+    <p>Clariwell provide the below services at reasonable cost with best quality</p>
+    <div>
+        <ul class="ab">
+            <li>Implementation </li>
+            <li>Migration  </li>
+            <li>Support</li>
+            <li>Roll-out </li>
+            <li>Freelancing on hourly basis. </li>
+        </ul>
+    </div>
+    
+    <div>
+        <ul class="ab">
+            <h3>Industries we deal in</h3>
+            <li>Automobile </li>
+            <li>Chemical  </li>
+            <li>Retail </li>
+            <li>Agro and Food Product </li>
+            <li>Constructions </li>
+        </ul>
+    </div>
+    
+    
+    <p>For more details Please get in touch with US</p>
+    <a href="contact" class="he-btn">CONTACT US</a>
+
+</section>
+
+  
+<!-- ----------Footer------- -->
+<section class="footer">
+    <h4>Follow Us</h4>
+    <div class="icons">
+        <i class="fa fa-envelope"></i>
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p>Made With <i class="fas fa-heart"></i> by Easy Tutorials</p>
+</section>
+
+
+
+
+
+<!-- ------JavaScript for Toggle Menu------ -->
+<script>
+    navLink = document.getElementById("navLink");
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>

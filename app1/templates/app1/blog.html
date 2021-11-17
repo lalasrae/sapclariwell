@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clariwell Website Design</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="{% static 'app1/css/all.css' %}">
+</head>
+<body>
+    <section class="sub-header">
+        <nav><a href="index.html"><img src="{% static 'app1/images/logo1.jpeg' %}" ></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-window-close-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="courses">IT CONSULTATION</a></li>
+                    <li><a href="blog">TRAININGS</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>Training</h1>
+    </section>
+<!-- --------------blog page content-------- -->
+<section class="course">
+    <h3>We provide trainings in</h3>
+    <div class="rowa">
+        <div class="course-cola">
+            <ul class="a">
+                <h3>SAP</h3>
+                <li>S/4 ABAP</li>
+                <li>Basis </li>
+                <li>Material Management (MM)</li>
+                <li>Financial Accounting (FI) and Controlling (FI & CO)</li>
+                <li>Production Planning (PP)</li>
+                <li>Quality Management (QM)</li>
+                <li>Sales & Distribution (SD)</li>
+                <li>Success Factor (SF)</li>
+                <li>Plant Maintenance (PM)</li>
+                <li>Project System (PS)</li>
+                <li>Warehouse Management (WM)</li>
+            </ul>
+        </div>
+        <div  class="py">
+            <ul class="a">
+                <li>Sales force</li>
+                <li>Python </li>
+                <li>Advance Java </li>
+            </ul>
+        </div>
+        <div  class="cola">
+        <ul class="a">
+            <h3>Mode of trainings</h3>
+            <li>Online Training </li>
+            <li>Live class room training </li>
+            <li>SAP End User Training</li>
+            <li>Corporate Workshops</li>
+            <li>SAP Internship</li>
+           
+        </ul>
+        </div>
+        </div>
+    <p>For more details Please get in touch with US</p>
+    <a href="contact" class="he-btn">CONTACT US</a>
+
+</section>
+
+
+  
+<!-- ----------Footer------- -->
+
+<section class="footer">
+    <h4>Follow Us</h4>
+    <div class="icons">
+        <i class="fa fa-envelope"></i>
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p>Made With <i class="fas fa-heart"></i> by Easy Tutorials</p>
+</section>
+
+
+
+
+<!-- ------JavaScript for Toggle Menu------ -->
+<script>
+    navLink = document.getElementById("navLink");
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>

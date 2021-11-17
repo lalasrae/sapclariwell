@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clariwell Website Design</title>
+    <link rel="stylesheet" href="{% static 'app1/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+<link rel="stylesheet" href="{% static 'app1/css/all.css' %}">
+</head>
+<body>
+    <section class="sub-header">
+        <nav><a href="index"><img src="{% static 'app1/images/logo1.jpeg' %}" ></a>
+            <div class="nav-link" id="navLink">
+                <i class="fa fa-window-close-o" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="about">ABOUT</a></li>
+                    <li><a href="courses">IT CONSULTATION</a></li>
+                    <li><a href="blog">TRAININGS</a></li>
+                    <li><a href="contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>About Us</h1>
+    </section>
+
+    <!-- ---------about us content------- -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <p>Clariwell was founded on 1st Jan 2018 as a SAP training institute and later, started to deal in Implementation, support, roll-out, freelancing Projects. 
+                    We are operating from Pune, Aurangabad, Nasik, Akola.
+                    We work on developing and implementing innovative digital solutions that support the business transformation of clients and address the environmental and social challenges we all face.
+                </p>
+                <a href="contact" class="hero-btn red-btn">CONTACT US</a>
+            </div>
+            <div class="about-col">
+                <img src="{% static 'images/about.jpg' %}">
+            </div>
+        </div>
+    </section>
+
+    <section class="ab_us">
+        <div class="row">
+            <div class="ab-col">
+                <h3>Why Clariwell</h3>
+                <li class="lt">We believe in providing best to the customer and our students </li>
+                <li class="lt">We have experienced professionals for all the modules for training and to  ensure high quality of service to our customers.</li>
+                <li class="lt">Also, we offers training in the regional languages for better understanding of the students</li>
+                <li class="lt">Provides internship covering hands on practice of day to day business scenarios. </li>
+                <li class="lt">We help to develop soft skills.</li>
+                <li class="lt">Regular mock interviews by experienced trainers</li>
+                <li class="lt">Placement assistance to get a job.</li>
+                <li class="lt">We work on the principle of “Don’t train only but share experience too”.</li>
+                <li class="lt">We have tie-up with many companies that will help to start the career quickly.</li>
+
+            
+            </div>
+        </div>
+    </section>
+    
+<!-- ----------Footer------- -->
+
+<section class="footer">
+    <h4>Follow Us</h4>
+    <div class="icons">
+        <i class="fa fa-envelope"></i>
+        <i class="fab fa-linkedin-in"></i>
+    </div>
+    <p>Made With <i class="fas fa-heart"></i> by Easy Tutorials</p>
+</section>
+
+
+
+<!-- ------JavaScript for Toggle Menu------ -->
+<script>
+    navLink = document.getElementById("navLink");
+    function showMenu(){
+        navLink.style.right = "0";
+    }
+    function hideMenu(){
+        navLink.style.right = "-200px";
+    }
+</script>
+
+
+</body>
+</html>
